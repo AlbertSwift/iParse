@@ -1,0 +1,53 @@
+PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.2.1)
+  - InstagramKit (3.6.8):
+    - AFNetworking (~> 2.0)
+    - InstagramKit/Exclude-UICKeyChainStore (= 3.6.8)
+  - InstagramKit/Exclude-UICKeyChainStore (3.6.8):
+    - AFNetworking (~> 2.0)
+  - InstagramKit/UICKeyChainStore (3.6.8):
+    - AFNetworking (~> 2.0)
+    - UICKeyChainStore (~> 2.0)
+  - Parse (1.8.2):
+    - Bolts/Tasks (>= 1.2.1)
+  - ParseUI (1.1.5):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
+  - UICKeyChainStore (2.0.6)
+
+DEPENDENCIES:
+  - InstagramKit (~> 3.0)
+  - InstagramKit/UICKeyChainStore
+  - Parse
+  - ParseUI
+
+SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Bolts: 7686a5cb204d1ac54cee26f12d9b7622db3f80d1
+  InstagramKit: 2dc81dd8a9b534bbf918fbf8c4bc11eef11040a3
+  Parse: 188601c6cd91fae55906badd283b513104a3a8c9
+  ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
+  UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
+
+COCOAPODS: 0.37.0
