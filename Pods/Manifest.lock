@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - Bolts/Tasks (1.2.1)
+  - IAPHelper (1.0.7)
   - InstagramKit (3.6.8):
     - AFNetworking (~> 2.0)
     - InstagramKit/Exclude-UICKeyChainStore (= 3.6.8)
@@ -29,25 +29,27 @@ PODS:
   - InstagramKit/UICKeyChainStore (3.6.8):
     - AFNetworking (~> 2.0)
     - UICKeyChainStore (~> 2.0)
-  - Parse (1.8.2):
-    - Bolts/Tasks (>= 1.2.1)
-  - ParseUI (1.1.5):
-    - Bolts/Tasks (~> 1.2)
-    - Parse (~> 1.8)
+  - IQKeyboardManager (3.3.1)
+  - MBProgressHUD (0.9.1)
+  - SIAlertView (1.3)
   - UICKeyChainStore (2.0.6)
 
 DEPENDENCIES:
+  - AFNetworking
+  - IAPHelper
   - InstagramKit (~> 3.0)
   - InstagramKit/UICKeyChainStore
-  - Parse
-  - ParseUI
+  - IQKeyboardManager
+  - MBProgressHUD (~> 0.9.1)
+  - SIAlertView
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  Bolts: 7686a5cb204d1ac54cee26f12d9b7622db3f80d1
+  IAPHelper: 60a2d5b6ef2d121ce041cf942cd6fc87dc3ab3a3
   InstagramKit: 2dc81dd8a9b534bbf918fbf8c4bc11eef11040a3
-  Parse: 188601c6cd91fae55906badd283b513104a3a8c9
-  ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
+  IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
   UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
 
 COCOAPODS: 0.37.0

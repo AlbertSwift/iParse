@@ -4,37 +4,42 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Instagram_parse-AFNetworking.xcscheme</key>
+		<key>Pods-InstaWings-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse-Bolts.xcscheme</key>
+		<key>Pods-InstaWings-IAPHelper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse-InstagramKit.xcscheme</key>
+		<key>Pods-InstaWings-IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse-Parse.xcscheme</key>
+		<key>Pods-InstaWings-InstagramKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse-ParseUI.xcscheme</key>
+		<key>Pods-InstaWings-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse-UICKeyChainStore.xcscheme</key>
+		<key>Pods-InstaWings-SIAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Instagram_parse.xcscheme</key>
+		<key>Pods-InstaWings-UICKeyChainStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InstaWings.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02E1234B340BFB1C82CEFD3E</key>
+		<key>0F01E0794B9CBB2A4A597E0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1ACC4E0E22190CAE9DD0B1C0</key>
+		<key>0F51AD85E2601304A63A7D07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34FDFCC40E805D37E6FC0892</key>
+		<key>4420DBC3AE9F0549A2BF2521</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D5F0A3E13EFC34D2228917C</key>
+		<key>4F4E70C0375318EDC794B4AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5288E224704F676C0F0C0671</key>
+		<key>63AAD8DBCBBCEE6D43A2E519</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5AF644FFB8E97D5D73FD649C</key>
+		<key>7F56FA2B06CEC3B6F6EB7ECE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9370C96809416FD55F331FC4</key>
+		<key>8C678430A8E41C16BFBCAFE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3C18E2C1D743350C89B94B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

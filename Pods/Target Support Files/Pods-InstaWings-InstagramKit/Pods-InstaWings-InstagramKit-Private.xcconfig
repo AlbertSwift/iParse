@@ -1,0 +1,7 @@
+#include "Pods-InstaWings-InstagramKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/InstagramKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/IAPHelper" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/InstagramKit" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/SIAlertView" "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
+OTHER_CFLAGS = ${PODS_INSTAWINGS_INSTAGRAMKIT_OTHER_CFLAGS}
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

@@ -118,18 +118,7 @@
     }
     
     BOOL success = YES;
-    
-    NSString *URLString = [url absoluteString];
-    if ([URLString hasPrefix:[[InstagramEngine sharedEngine] appRedirectURL]]) {
-        NSString *delimiter = @"code=";
-        NSArray *components = [URLString componentsSeparatedByString:delimiter];
-        if (components.count > 1) {
-            NSString *code = [components lastObject];
-            [self tokenCall:code];
-        }
-    }
-    
-   /* NSString *token = [self queryStringParametersFromString:url.fragment][@"access_token"];
+    NSString *token = [self queryStringParametersFromString:url.fragment][@"access_token"];
     if (token)
     {
         self.accessToken = token;
@@ -141,37 +130,9 @@
                                      code:InstagramKitAuthenticationFailedError
                                  userInfo:@{NSLocalizedDescriptionKey: localizedDescription}];
         success = NO;
-    }*/
+    }
     return success;
 }
-
-
--(void) tokenCall:(NSString *)code
-{
-    NSString *url=@"https://api.instagram.com/oauth/access_token";
-    
-    NSDictionary *parameters = @{
-                                 @"grant_type":@"authorization_code",
-                                 @"client_id":self.appClientID,
-                                 @"client_secret":self.appSecretKey,
-                                 @"redirect_uri":self.appRedirectURL,
-                                 @"code":code,
-                                 };
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    //  manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    [manager POST:url parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@",responseObject);
-        
-        self.accessToken =[responseObject objectForKey:@"access_token"];
-        [[InstagramEngine sharedEngine] setAccessToken:[responseObject objectForKey:@"access_token"]];
-        
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
-}
-
 
 
 - (BOOL)isSessionValid

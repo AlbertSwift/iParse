@@ -1,14 +1,18 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '6.0'
+# platform :ios, '7.0'
 
-target 'Instagram_parse' do
-pod 'Parse'
-pod 'ParseUI'
-pod 'InstagramKit', '~> 3.0'
-pod 'InstagramKit/UICKeyChainStore'
+target 'InstaWings' do
+
+    pod 'IQKeyboardManager'
+    pod 'AFNetworking'
+    pod 'SIAlertView'
+    pod 'MBProgressHUD', '~> 0.9.1'
+    pod 'InstagramKit', '~> 3.0'
+    pod 'InstagramKit/UICKeyChainStore'
+    pod 'IAPHelper'
 end
 
-target 'Instagram_parseTests' do
+target 'InstaWingsTests' do
 
 end
 

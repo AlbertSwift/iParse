@@ -35,7 +35,6 @@
  */
 @property (nonatomic, copy) NSString *appClientID;
 @property (nonatomic, copy) NSString *appSecretKey;
-
 /**
  *  Redirect URL of your App, as registered with Instagram.
  */
@@ -80,7 +79,7 @@
  */
 - (BOOL)receivedValidAccessTokenFromURL:(NSURL *)url
                                   error:(NSError *__autoreleasing *)error;
--(void) tokenCall:(NSString *)code;
+
 /**
  *  Validate if authorization is done.
  *

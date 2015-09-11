@@ -37,9 +37,7 @@ INSTAGRAMKIT_EXTERN NSString *const kInstagramKitBaseURLConfigurationKey;
  *  Configuration Key for the Instagram API's Authorization URL.
  */
 INSTAGRAMKIT_EXTERN NSString *const kInstagramKitAuthorizationURLConfigurationKey;
-
 INSTAGRAMKIT_EXTERN NSString *const kInstagramAppClientIdSecretKey;
-
 
 /**
  *  Instagram API's Base URL.
