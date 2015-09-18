@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LATO-BOL.TTF">
+            <string>Lato-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetFollowersVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A25-AK-Ihh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssC-E2-dNa" customClass="HeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="0Yf-n9-jEc"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWv-L3-kpA">
+                            <rect key="frame" x="28" y="81" width="265" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="eT6-Nz-fS1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joW-fc-H6k">
+                            <rect key="frame" x="28" y="110" width="265" height="320"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="get-coins_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="n62-Ux-IOQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="265" height="320"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-jV-L5G">
+                                    <rect key="frame" x="24" y="40" width="215" height="260"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="cXk-uK-rQb"/>
+                                        <outlet property="delegate" destination="-1" id="73n-dr-uwB"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="n62-Ux-IOQ" secondAttribute="trailing" id="6j7-Fr-Rd4"/>
+                                <constraint firstAttribute="bottom" secondItem="n62-Ux-IOQ" secondAttribute="bottom" id="CQi-kD-Zkp"/>
+                                <constraint firstItem="n62-Ux-IOQ" firstAttribute="leading" secondItem="joW-fc-H6k" secondAttribute="leading" id="Ipg-Rc-apx"/>
+                                <constraint firstAttribute="trailing" secondItem="Dor-jV-L5G" secondAttribute="trailing" constant="26" id="OKG-df-9FP"/>
+                                <constraint firstItem="Dor-jV-L5G" firstAttribute="top" secondItem="joW-fc-H6k" secondAttribute="top" constant="40" id="Vw3-TB-Hj2"/>
+                                <constraint firstItem="n62-Ux-IOQ" firstAttribute="top" secondItem="joW-fc-H6k" secondAttribute="top" id="gTo-md-Lx5"/>
+                                <constraint firstItem="Dor-jV-L5G" firstAttribute="leading" secondItem="joW-fc-H6k" secondAttribute="leading" constant="24" id="t5e-ZI-vIq"/>
+                                <constraint firstAttribute="bottom" secondItem="Dor-jV-L5G" secondAttribute="bottom" constant="20" id="vX5-c4-7Le"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.30196078430000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="joW-fc-H6k" secondAttribute="trailing" constant="27" id="9Vc-iG-drd"/>
+                        <constraint firstAttribute="trailing" secondItem="ssC-E2-dNa" secondAttribute="trailing" id="FDo-2G-Nza"/>
+                        <constraint firstItem="ssC-E2-dNa" firstAttribute="top" secondItem="A25-AK-Ihh" secondAttribute="top" id="FFZ-2U-h80"/>
+                        <constraint firstAttribute="bottom" secondItem="joW-fc-H6k" secondAttribute="bottom" constant="50" id="NeQ-n9-EtA"/>
+                        <constraint firstItem="ssC-E2-dNa" firstAttribute="leading" secondItem="A25-AK-Ihh" secondAttribute="leading" id="POs-IF-uVk"/>
+                        <constraint firstItem="joW-fc-H6k" firstAttribute="leading" secondItem="A25-AK-Ihh" secondAttribute="leading" constant="28" id="QJ7-iV-Uky"/>
+                        <constraint firstAttribute="trailing" secondItem="CWv-L3-kpA" secondAttribute="trailing" constant="27" id="V7G-Qf-HyD"/>
+                        <constraint firstItem="joW-fc-H6k" firstAttribute="top" secondItem="CWv-L3-kpA" secondAttribute="bottom" constant="8" id="bsC-fu-Pjk"/>
+                        <constraint firstItem="CWv-L3-kpA" firstAttribute="top" secondItem="ssC-E2-dNa" secondAttribute="bottom" constant="17" id="t8X-oO-phH"/>
+                        <constraint firstItem="CWv-L3-kpA" firstAttribute="leading" secondItem="A25-AK-Ihh" secondAttribute="leading" constant="28" id="yKR-wZ-aJk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.30196078431372547" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A25-AK-Ihh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4nZ-fb-mFJ"/>
+                <constraint firstItem="A25-AK-Ihh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5J0-yx-kZx"/>
+                <constraint firstAttribute="bottom" secondItem="A25-AK-Ihh" secondAttribute="bottom" id="AxU-MW-SL9"/>
+                <constraint firstAttribute="trailing" secondItem="A25-AK-Ihh" secondAttribute="trailing" id="VoB-Bm-98P"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="303" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="get-coins_bg.png" width="264" height="318"/>
+    </resources>
+</document>

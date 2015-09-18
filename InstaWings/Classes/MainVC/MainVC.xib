@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fi-zr-uiQ">
+                    <rect key="frame" x="41" y="360" width="238" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Lcd-0t-lWh"/>
+                    </constraints>
+                    <state key="normal" image="login-btn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLoginClick:" destination="-1" eventType="touchUpInside" id="3di-19-hwQ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-LN-dSt">
+                    <rect key="frame" x="90" y="76" width="140" height="192"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Iy2-LN-dSt" secondAttribute="height" multiplier="35:48" id="rgX-cD-kWS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.30196078431372547" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3fi-zr-uiQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="41" id="9mK-JF-Vip"/>
+                <constraint firstAttribute="centerX" secondItem="Iy2-LN-dSt" secondAttribute="centerX" id="Ce8-K0-efL"/>
+                <constraint firstAttribute="bottom" secondItem="3fi-zr-uiQ" secondAttribute="bottom" constant="76" id="EJA-St-jKh"/>
+                <constraint firstAttribute="trailing" secondItem="3fi-zr-uiQ" secondAttribute="trailing" constant="41" id="ZlP-8c-4Vl"/>
+                <constraint firstItem="Iy2-LN-dSt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="oFd-dY-Z8g"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login-btn.png" width="238" height="44"/>
+        <image name="logo-top.png" width="140" height="192"/>
+    </resources>
+</document>
